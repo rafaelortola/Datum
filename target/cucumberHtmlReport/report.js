@@ -5,6 +5,209 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.scenario({
+  "name": "Reservar 1 ticket de passagem aérea",
+  "description": "",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "name": "@Cenário1"
+    },
+    {
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "name": "que acesso a página da aplicação",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "Steps.acessar_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informe um usuario válido",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarUsername()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informe uma senha válida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão sign-in",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoSignIn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a cidade de origem",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionaCidadeDeOrigem()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a cidade de destino",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionaCidadeDeDestino()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo uma data de ida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informoUmaDataDeIdaValida()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo uma data de volta",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informoUmaDataDeVolta()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a opção First Class",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionoOpcaoFirstClass()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono um passageiro",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionarUmPassageiro()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão continuar da página de busca",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoContinuarPaginaBusca()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono voo de ida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionarVooDeIda()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono voo de volta",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionarVooDeVolta()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão continuar da página reserva de voo",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoContinuarPaginaReservaVoo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o primeiro e o segundo nome",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNomeCompleto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o número do cartão de crédito",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNumeroCartaoCredito()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o nome do passageiro",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNomeDoPassageiro()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão de reservar passagem",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoParaReservarPassagem()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "exibe mensagem de compra reservada",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "Steps.validaCompraReservada()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Criar massa de dados - Reserva",
   "description": "",
   "keyword": "Cenário",
@@ -68,14 +271,143 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Preencher FlightNumber",
+  "name": "seleciono a companhia aérea Pangaea Airlines",
   "keyword": "E "
 });
 formatter.match({
-  "location": "Steps.selecionarFlightNumber(String,String,String)"
+  "location": "Steps.selecionarAirlinesPangea()"
 });
 formatter.result({
-  "error_message": "cucumber.runtime.CucumberException: Step [Preencher FlightNumber] is defined with 3 parameters at \u0027StepsDefinition.Steps.selecionarFlightNumber(String,String,String) in file:/C:/ProjetosGit/Datum/Web/target/test-classes/\u0027.\nHowever, the gherkin step has 0 arguments.\nStep text: Preencher FlightNumber\r\n\tat cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\r\n",
-  "status": "failed"
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a cidade de origem",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionaCidadeDeOrigem()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a cidade de destino",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionaCidadeDeDestino()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo uma data de ida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informoUmaDataDeIdaValida()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono a opção First Class",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionoOpcaoFirstClass()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono um passageiro",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionarUmPassageiro()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão continuar da página de busca",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoContinuarPaginaBusca()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "seleciono voo de ida",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.selecionarVooDeIda()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão continuar da página reserva de voo",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoContinuarPaginaReservaVoo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o primeiro e o segundo nome",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNomeCompleto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o número do cartão de crédito",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNumeroCartaoCredito()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "informo o nome do passageiro",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.informarNomeDoPassageiro()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clico no botão de reservar passagem",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "Steps.clicarNoBotaoParaReservarPassagem()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "exibe mensagem de compra reservada",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "Steps.validaCompraReservada()"
+});
+formatter.result({
+  "status": "passed"
 });
 });

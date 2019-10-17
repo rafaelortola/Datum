@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d3b479-3141-425c-8889-7817e35c30bc" name="Default Changelist" comment="" />
+    <list default="true" id="84d3b479-3141-425c-8889-7817e35c30bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Features/reservaDeTicket.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Features/reservaDeTicket.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/PaginaLogado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/PaginaLogado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/SampleAppData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/SampleAppData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepsDefinition/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsDefinition/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Suport/Web.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Suport/Web.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumberHtmlReport/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumberHtmlReport/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/PaginaLogado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/PaginaLogado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepsDefinition/Steps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepsDefinition/Steps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Suport/Web.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Suport/Web.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/Runner.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,6 +41,7 @@
   </component>
   <component name="ProjectId" id="1SGByTCUjPx1mUbDKFHUwDdLuVL" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -60,16 +78,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web" />
+    <configuration name="Steps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Teste" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestRunner.*" />
+          <option name="PATTERN" value="StepsDefinition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.Runner" />
+      <option name="PACKAGE_NAME" value="StepsDefinition" />
+      <option name="MAIN_CLASS_NAME" value="StepsDefinition.Steps" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,11 +109,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gerarMassa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Teste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PageObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.gerarMassa" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gerarMassa.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Teste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PageObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.gerarMassa" />
+      <option name="METHOD_NAME" value="setUp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner (1)" />
+        <item itemvalue="JUnit.gerarMassa.setUp" />
+        <item itemvalue="JUnit.gerarMassa" />
+        <item itemvalue="JUnit.Steps" />
         <item itemvalue="JUnit.Steps.selecionarFlightNumber" />
-        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -112,20 +163,15 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepsDefinition/Steps.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepsDefinition/Steps.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -7,6 +7,8 @@ import org.easetech.easytest.runner.DataDrivenTestRunner;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.Random;
 
@@ -98,6 +100,13 @@ public class PaginaLogado extends BasePage{
 
     public PaginaLogado selecionarOpcaoOneWay(){
         navegador.findElement(By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > b > font > input[type=radio]:nth-child(2)")).click();
+        return this;
+    }
+
+    public PaginaLogado selecionarCompanhiaAereaPangea(){
+        navegador.findElement(By.name("airline")).click();
+        navegador.findElement(By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(10) > td:nth-child(2) > select > option:nth-child(4)")).click();
+
         return this;
     }
 

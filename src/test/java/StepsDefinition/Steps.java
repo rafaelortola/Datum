@@ -19,8 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-@RunWith(DataDrivenTestRunner.class)
-@DataLoader(filePaths = "SampleAppData.csv")
+
 public class Steps {
     private WebDriver navegador;
 
@@ -148,19 +147,12 @@ public class Steps {
                 .selecionarOpcaoOneWay();
         }
 
-        @Dado("Preencher FlightNumber")
-        public void selecionarFlightNumber(@Param(name="FlightNumber") String FlightNumber,@Param(name="Passengers")String Passengers,@Param(name="Class")String Class){
+    @Dado("seleciono a companhia aérea Pangaea Airlines")
+    public void selecionarAirlinesPangea(){
+        new PaginaLogado(navegador)
+                .selecionarCompanhiaAereaPangea();
+    }
 
-            WebElement campoAirlines = navegador.findElement(By.name("airline"));
-            new Select(campoAirlines).selectByVisibleText(FlightNumber);
-
-            WebElement campoPassengers = navegador.findElement(By.name("passCount"));
-            new Select(campoPassengers).selectByVisibleText(Passengers);
-
-            WebElement selecionarClass = navegador.findElement(By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(9) > td:nth-child(2)"));
-            new Select(selecionarClass).selectByValue(Class);
-
-        }
 
 }
 
